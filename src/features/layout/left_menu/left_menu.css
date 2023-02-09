@@ -1,0 +1,55 @@
+.left-menu {
+  visibility: hidden;
+  max-width: 0px;
+  font-size: 0.9rem;
+}  
+
+button.departments {
+  visibility: visible;
+  min-width: 0px;
+  max-width: 3rem;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button.departments .text {
+  display: none;
+  width: 10rem;
+  font-size: 1.1rem;
+}
+
+.left-menu-categories .item {
+  cursor: pointer;
+}
+.left-menu-categories .item > .item {
+  margin-left: 0.75rem;
+}
+.left-menu-categories .item > div {
+  padding: 0.25rem;
+}
+.left-menu-categories .item svg {
+  margin-right: 0.25rem;
+}
+
+span.active {
+  font-weight: 500;
+}
+
+@media screen and (min-width: 480px) {
+  .left-menu {
+    visibility: visible;
+    min-width: fit-content;
+    margin-right: 1rem;
+    font-size: 0.9rem;
+  } 
+  button.departments {
+    position: static;
+    width: fit-content;
+  }
+}
